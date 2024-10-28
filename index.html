@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/fancybox.css">
+    <script src='https://kit.fontawesome.com/fc66dde611.js' crossorigin='anonymous'></script>
+    <script src='https://code.jquery.com/jquery-3.7.1.min.js'></script>
+    <script src='script/responsiveslides.js'></script>
+    <link rel="stylesheet" href="css/animate.css">
+    <script src="script/fancybox.js"></script>
+
+    <title>Tarea 2 Unidad 2</title>
+</head>
+
+<body>
+    <header>
+        <nav id="arriba" class="nav1">
+            <div class="imagen-bar">
+                <figure class="imagenlogo">
+                    <img src='img/logo.png' alt='Texto descriptivo'>
+                </figure>
+                <div id="bar1" class="bar">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+
+            <ul id="ul01" class="ul1">
+                <li>
+                    <a class="ul1a" href="#">HOME</a>
+                </li>
+                <li>
+                    <a class="ul1a" href="#">SERVICES</a>
+                </li>
+                <li>
+                    <a class="ul1a" href="">GALLERY</a>
+                </li>
+                <li>
+                    <a class="ul1a" href="#">COACHES</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="slide-seccion">
+        <section class="fotofondo">
+
+            <ul class="rslides">
+                <li><img src="img/slide1.jpg" alt="Primera Imagen"></li>
+                <li><img src="img/slide2.jpg" alt="Segunda Imagen"></li>
+                <li><img src="img/slide3.jpg" alt="Tercera Imagen"></li>
+            </ul>
+
+            <div class="info">
+                <h1>BEST FITNESS</h1>
+                <br>
+                <p>Our club encourages wellness by providing top-notch equipment, firt-class instrutors, innovative
+                    classes,
+                    and qualified staff.</p>
+
+                <a href="#" class="btn_rojo">JOIN NOW</a>
+            </div>
+            <div class="degradado"></div>
+
+        </section>
+    </section>
+
+    <section>
+        <h1 class="h1_servicios">Nuestros Servicios</h1>
+        <div class="iconos_servicios">
+            <div class="tamaño animate__animated animate__backInLeft colorlinea  animate__repeat-1" data-wow-offset="100" data-wow-duration="5s">
+                <i class="fas fa-award"></i>
+                <h3>QUALITY SERVICE</h3>
+                <p>At our fitness studio, you can experience the best level of customer services.</p>
+            </div>
+            <div class="tamaño animate__animated animate__backInLeft colorlinea  animate__repeat-1">
+                <i class="fas fa-dumbbell"></i>
+                <h3>SPACIOUS GYM</h3>
+                <p>our gym has enough please for all kinds of workouts and a wide variety of equipment.</p>
+            </div>
+            <div class="tamaño animate__animated animate__backInRight colorlinea  animate__repeat-1">
+                <i class="fas fa-file-invoice"></i>
+                <h3>UNIQUE FITNESS PROGRAMS</h3>
+                <p>Our coaches have developed more than 50 fitness programs and workouts for you.</p>
+            </div>
+            <div class="tamaño animate__animated animate__backInRight colorlinea  animate__repeat-1">
+                <i class="fas fa-users"></i>
+                <h3>GROUP CLASSES</h3>
+                <p>if you prefer training with friends then our group classes have what you need.</p>
+            </div>
+        </div>
+    </section>
+    <section class="contendor_principal">
+        <div class="contenedor_fotos">
+            <a href="img/foto1.jpg" data-fancybox="gallery" data-caption="Foto 1">
+                <figure class="fotos">
+                    <img src='img/foto1.jpg' alt='Texto descriptivo'>
+                </figure>
+            </a>
+
+            <a href="img/foto2.jpg" data-fancybox="gallery" data-caption="Foto 2">
+                <figure class="fotos">
+                    <img src='img/foto2.jpg' alt='Texto descriptivo'>
+                </figure>
+            </a>
+
+            <a href="img/foto3.jpg" data-fancybox="gallery" data-caption="Foto 3">
+                <figure class="fotos">
+                    <img src='img/foto3.jpg' alt='Texto descriptivo'>
+                </figure>
+            </a>
+
+            <a href="img/foto4.jpg" data-fancybox="gallery" data-caption="Foto 4">
+                <figure class="fotos">
+                    <img src='img/foto4.jpg' alt='Texto descriptivo'>
+                </figure>
+            </a>
+        </div>
+        <div class="tamaño2">
+            <h1><span style="font-weight: bold;">GALLERY</span> <span style="font-weight: 300;">FITNESS</span> <span
+                    style="font-weight: bold;">CLUB</span></h1>
+            <br>
+            <p>Profit is the fitness club that makes fitness totally accessible to everybody. We promise to help people
+                form all walks of life achiave their individual health and fitness goals-no matter their shape, age, and
+                experience.</p>
+
+            <a href="#" class="btn_rojo2">JOIN NOW</a>
+        </div>
+    </section>
+    <div class="flecha">
+        <a href="#arriba"><i class="fa-solid fa-arrow-up"></i></a>
+    </div>
+    <footer>
+        <div>
+            <p>
+                <i class="fa-regular fa-copyright"></i>
+                2020 Profit. Privacy Policy.
+            </p>
+        </div>
+        <div>
+            <i class='fa-brands fa-facebook'></i>
+            <i class='fa-brands fa-instagram'></i>
+            <i class='fa-brands fa-youtube'></i>
+        </div>
+    </footer>
+
+    <script>
+        $("#bar1").click(function () {
+            $('#ul01').toggleClass('abrir_menu');
+        });
+
+        $("#bar1").click(function () {
+            $('.slide-seccion').toggleClass('espacio_menu');
+        });
+
+        $(".ul1a").click(function () {
+            $('#ul01').toggleClass('abrir_menu');
+        });
+
+        $(".ul1a").click(function () {
+            $('.slide-seccion').toggleClass('espacio_menu');
+        });
+
+        $(function () {
+            $(".rslides").responsiveSlides();
+        });
+
+        Fancybox.bind('[data-fancybox="gallery"]', {
+        });
+
+        new WOW().init();
+
+    </script>
+</body>
+
+</html>
